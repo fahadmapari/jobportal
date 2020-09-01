@@ -1,0 +1,39 @@
+﻿
+.profile-container {
+    width: 50rem;
+    background-color: #F2F2F2;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+    .profile-heading {
+        text-align: center;
+        margin: 1rem;
+    }
+.profile-item{
+    margin: 2rem 1rem;
+}
+
+.profile-data{
+    font-size: 1.8rem;
+    font-weight: 700;
+   
+}
+
+.flash-message-container {
+    text-align: center;
+    padding: 0.8rem;
+    background-color: rgba(156, 255, 162,0.5);
+    width: 30rem;
+    margin: 2rem auto;
+    border-radius: 5px;
+}
+
+.flash-danger {
+    background-color: rgba(255, 61, 61,0.5);
+}
+
+.flash-message {
+    opacity: 1;
+}

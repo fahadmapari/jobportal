@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ProjectJobPortal.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>JobPortal</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <script src="https://kit.fontawesome.com/d4cc5fd05d.js" crossorigin="anonymous"></script>
+    
+    <link href="./style/main.css" rel="stylesheet" />
+    
+</head>
+<body>
+     <form id="form1" runat="server">
+        <div class="main-body">
+            
+               <nav class="navbar">
+                    <div class="navbar-holder">
+                        <div class="navbar-brand">
+                            <asp:LinkButton ID="LinkButton3" PostBackUrl="/WebForm1.aspx" runat="server"><h2>JobPortal</h2></asp:LinkButton> 
+                        </div>
+                        <asp:Panel ID="Panel1" runat="server">
+                            <div class="navbar-left">
+                            <a href="/jobs.aspx"><i class="fas fa-search"></i> Find Jobs</a>
+                            </div>
+                        </asp:Panel>
+                        <asp:Panel ID="Panel2" runat="server" Visible="False">
+                             <div class="navbar-left">
+                            <a href="/posted-jobs.aspx"><i class="fas fa-file-signature"></i> Your Jobs</a>
+                            </div>
+                        </asp:Panel>
+                       
+                    </div>
+
+                    <div class="navbar-content">
+                        <ul class="navbar-items">
+                            <asp:Panel ID="guestNavPanel" runat="server" Visible="False">
+                                <li class="navbar-item">
+                                <asp:HyperLink ID="HyperLink4" runat="server" CssClass="navbar-link" NavigateUrl="~/applicant-join.aspx"><i class="fas fa-user"></i>&nbsp Signup as Applicant</asp:HyperLink>
+                                
+                            </li>
+                            <li class="navbar-item">
+                                <asp:HyperLink ID="HyperLink5" runat="server" CssClass="navbar-link" NavigateUrl="~/employer-join.aspx"><i class="fas fa-building"></i>&nbsp Signup as Employer</asp:HyperLink>
+                            </li>
+                            <li class="navbar-item">
+                                <asp:HyperLink ID="HyperLink6" runat="server" CssClass="navbar-link" NavigateUrl="~/login.aspx">Login <i class="fas fa-sign-in-alt"></i></asp:HyperLink>
+                            </li>
+                            </asp:Panel>
+
+                             <asp:Panel ID="employerNavPanel" runat="server" Visible="False">
+                                <li class="navbar-item">
+                                <asp:HyperLink ID="navEmployerProfile" runat="server" CssClass="navbar-link"></asp:HyperLink>
+                               
+                            </li>
+                            <li class="navbar-item">
+                                <asp:HyperLink ID="HyperLink2" runat="server" CssClass="navbar-link" NavigateUrl="~/post-job.aspx"> <i class="fas fa-edit"></i>Post Job  </asp:HyperLink>
+                            </li>
+                            <li class="navbar-item">
+                                <asp:HyperLink ID="HyperLink3" runat="server" CssClass="navbar-link  navbar-item-extra" NavigateUrl="~/applied-applicants.aspx"><i class="fas fa-user-friends"></i> View Applicants  </asp:HyperLink>
+                            </li>
+                            <li class="navbar-item">
+                                <asp:LinkButton ID="LinkButton1" runat="server" CssClass="navbar-link " OnClick="LinkButton1_Click">Logout <i class="fas fa-sign-out-alt"></i></asp:LinkButton>
+                            </li>
+                            </asp:Panel>
+                            
+                            <asp:Panel ID="navApplicantPanel" runat="server" Visible="False">
+                                <li class="navbar-item">
+                                     <asp:HyperLink ID="navApplicantProfile" runat="server" CssClass="navbar-link" NavigateUrl="~/applicant-join.aspx"><i class="fas fa-user"></i></asp:HyperLink>
+                            </li>
+                            
+                            <li class="navbar-item">
+                                <asp:HyperLink ID="HyperLink8" runat="server" CssClass="navbar-link" NavigateUrl="~/applied-jobs.aspx"><i class="fas fa-sticky-note"></i> View Applied Jobs </asp:HyperLink>
+                            </li>
+                            <li class="navbar-item">
+                                <asp:LinkButton ID="LinkButton2" runat="server" CssClass="navbar-link " OnClick="LinkButton1_Click">Logout <i class="fas fa-sign-out-alt"></i></asp:LinkButton>
+                            </li>
+                            </asp:Panel>
+
+                        </ul>
+                    </div>
+                </nav>
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> 
+            </asp:ContentPlaceHolder>
+            
+        </div>
+    </form>
+</body>
+</html>

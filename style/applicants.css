@@ -1,0 +1,55 @@
+﻿.table-container {
+    margin: 2rem auto;
+}
+
+.applicants-table {
+    margin: auto;
+    border-collapse:collapse;
+    text-align: left;
+}
+
+    .applicants-table td, .applicants-table th {
+        border: 1px solid #ddd;
+        padding: 1.8rem;
+    }
+        .applicants-table td{
+            font-weight: 500;
+            font-size: 1rem;
+        }
+        .applicants-table th {
+            background-color: var(--primary-blue);
+            color: white;
+        }
+
+    .applicants-table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .applicants-table tr:hover {
+        background-color: #ddd;
+    }
+
+
+.flash-message-container {
+    text-align: center;
+    padding: 0.8rem;
+    background-color: rgba(156, 255, 162,0.5);
+    width: 30rem;
+    margin: 2rem auto;
+    border-radius: 5px;
+}
+
+.flash-danger {
+    background-color: rgba(255, 61, 61,0.5);
+}
+
+.flash-message {
+    opacity: 1;
+}
+
+.view-other-jobs{
+    text-align: center;
+    display: block;
+    margin: 0.5rem auto;
+  
+}

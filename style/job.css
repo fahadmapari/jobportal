@@ -1,0 +1,74 @@
+﻿
+.job-container-box{
+    width: 50rem;
+    margin: 1rem auto;
+}
+
+
+.job-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #F2F2F2;
+    position: relative;
+    animation: showjobs 0.5s ease-in;
+}
+
+.job-item {
+    margin: 1rem 0;
+}
+
+
+
+.job-item--jobtitle {
+    color: var(--primary-blue);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.salary-heading {
+    display: inline-block;
+}
+
+.view-btn-container {
+    display: block;
+    width: 100%;
+}
+
+.view-more {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+    .view-more:hover {
+        color: black;
+    }
+
+
+.flash-message-container {
+    text-align: center;
+    padding: 0.8rem;
+    background-color: rgba(156, 255, 162,0.5);
+    width: 30rem;
+    margin: 2rem auto;
+    border-radius: 5px;
+}
+
+.flash-danger {
+    background-color: rgba(255, 61, 61,0.5);
+}
+
+.flash-message {
+    opacity: 1;
+}
+
+@keyframes showjobs {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

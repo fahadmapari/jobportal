@@ -1,0 +1,76 @@
+﻿.signup-box {
+    width: 80rem;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: start;
+    animation: show 2s ease-in;
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    display: block;
+    width: 25rem;
+    background-color: #F2F2F2;
+}
+
+.signup-header{
+    margin: 2rem 1rem; 
+}
+
+.signup-div {
+    margin: 1rem 1rem;
+    margin-right: 2rem;
+}
+
+.signup-input{
+    width: 20rem;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.signup-gender{
+    display: inline;
+}
+
+.signup-btn {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0px;
+    font-weight: 500;
+}
+
+.signup-btn:hover{
+    color: black;
+}
+
+.signup-image {
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.73)),
+                        url("../asset/employee.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.signup-image h2{
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 3rem;
+    top: 50%;
+}
+
+
+
+@keyframes show{
+    from{
+        opacity: 0;
+    }to{
+         opacity: 1
+     }
+}
